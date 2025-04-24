@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Definición de la codificación de caracteres UTF-8 y configuración de la vista para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
     <title>Inicio | Día del Idioma</title>
+    
+    <!-- Enlace a la hoja de estilo CSS externa para aplicar el diseño de la página -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Enlace al archivo JavaScript para funciones interactivas en la página -->
     <script defer src="js/main.js"></script>
 </head>
 <body onload="mostrarBienvenida()">
+    <!-- Sección de encabezado con el título principal de la página -->
     <header>
         <h1>Día del Idioma</h1>
     </header>
+    
+    <!-- Barra de navegación con enlaces a otras páginas del sitio -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -18,22 +28,45 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    
+    <!-- Sección principal del contenido de la página -->
     <main>
+        <!-- Sección sobre la celebración del Día del Idioma -->
         <section>
             <h2>Celebrando la Diversidad del Español</h2>
-            <p>El 23 de abril conmemoramos el <strong>Día del Idioma Español</strong>, una fecha significativa que honra la riqueza y vitalidad de nuestra lengua. Esta jornada coincide con el fallecimiento de dos gigantes de la literatura mundial: <a href="https://es.wikipedia.org/wiki/Miguel_de_Cervantes">Miguel de Cervantes</a> y <a href="https://es.wikipedia.org/wiki/William_Shakespeare">William Shakespeare</a>, así como con el deceso de <a href="https://es.wikipedia.org/wiki/Inca_Garcilaso_de_la_Vega">Inca Garcilaso de la Vega</a>, en 1616. Aunque las fechas exactas varían debido a la diferencia entre los calendarios juliano y gregoriano, esta coincidencia ha convertido el 23 de abril en un día emblemático para la literatura mundial.</p>
-            <p>El español es hablado por más de 500 millones de personas en más de 20 países, siendo una lengua viva que evoluciona constantemente, incorporando anglicismos, regionalismos y nuevos términos surgidos del uso popular y literario. Esta diversidad lingüística es celebrada en el ámbito internacional, incluyendo en las Naciones Unidas, donde el 23 de abril se celebra el <a href="https://es.wikipedia.org/wiki/D%C3%ADa_del_Idioma_Espa%C3%B1ol_en_las_Naciones_Unidas">Día del Idioma Español</a>, promoviendo su uso y preservación en el ámbito global.</p>
+            <p>
+                El 23 de abril conmemoramos el <strong>Día del Idioma Español</strong>, una fecha significativa que honra la riqueza y vitalidad de nuestra lengua.
+                Esta jornada coincide con el fallecimiento de dos gigantes de la literatura mundial: 
+                <a href="https://es.wikipedia.org/wiki/Miguel_de_Cervantes">Miguel de Cervantes</a> y 
+                <a href="https://es.wikipedia.org/wiki/William_Shakespeare">William Shakespeare</a>, 
+                así como con el deceso de 
+                <a href="https://es.wikipedia.org/wiki/Inca_Garcilaso_de_la_Vega">Inca Garcilaso de la Vega</a>, en 1616.
+                Aunque las fechas exactas varían debido a la diferencia entre los calendarios juliano y gregoriano, esta coincidencia ha convertido el 23 de abril en un día emblemático para la literatura mundial.
+            </p>
+            <p>
+                El español es hablado por más de 500 millones de personas en más de 20 países, siendo una lengua viva que evoluciona constantemente, incorporando anglicismos, regionalismos y nuevos términos surgidos del uso popular y literario.
+                Esta diversidad lingüística es celebrada en el ámbito internacional, incluyendo en las Naciones Unidas, donde el 23 de abril se celebra el 
+                <a href="https://es.wikipedia.org/wiki/D%C3%ADa_del_Idioma_Espa%C3%B1ol_en_las_Naciones_Unidas">Día del Idioma Español</a>, promoviendo su uso y preservación en el ámbito global.
+            </p>
+            
+            <!-- Imagen de los escritores Miguel de Cervantes y William Shakespeare -->
             <figure>
                 <img src="img/Miguel de Cervantes y William Shakespeare.jpg" alt="Retratos de Miguel de Cervantes y William Shakespeare">
                 <figcaption>Retratos de Miguel de Cervantes y William Shakespeare</figcaption>
             </figure>
+            
+            <!-- Botón para mostrar una cita literaria -->
             <button onclick="mostrarCita()">Mostrar cita literaria</button>
             <p id="cita"></p>
         </section>
+        
+        <!-- Sección con un dato curioso sobre el idioma español -->
         <section>
             <h3>Dato Curioso</h3>
             <p>¿Sabías que el español es el segundo idioma más hablado en el mundo por número de hablantes nativos?</p>
         </section>
+        
+        <!-- Sección con recursos multimedia relacionados al Día del Idioma -->
         <section>
             <h3>Recursos Multimedia</h3>
             <p>Para profundizar en la historia y la importancia del Día del Idioma, te invitamos a explorar los siguientes recursos:</p>
@@ -43,12 +76,15 @@
             </ul>
         </section>
     </main>
+    
+    <!-- Pie de página con información de derechos de autor -->
     <footer>
         <p>© 2025 Proyecto Estudiantil - Día del Idioma</p>
     </footer>
 
+    <!-- Script para mostrar un mensaje de bienvenida cuando la página cargue -->
     <script>
-        // Mostrar un mensaje de bienvenida usando alert() cuando la página cargue
+        // Función que muestra una alerta con el mensaje de bienvenida
         function mostrarBienvenida() {
             alert("¡Bienvenido al Día del Idioma! Celebramos nuestra lengua y cultura.");
         }
