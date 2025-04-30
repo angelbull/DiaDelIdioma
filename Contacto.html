@@ -2,26 +2,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Definición de codificación de caracteres y configuración de visualización para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título que aparece en la pestaña del navegador -->
     <title>Contacto | Día del Idioma</title>
-    
-    <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Enlace al archivo JavaScript con la opción 'defer' para cargarlo después del HTML -->
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <!-- Encabezado con el título principal del sitio -->
     <header>
         <h1>Día del Idioma</h1>
     </header>
-    
-    <!-- Barra de navegación para moverse entre las páginas del proyecto -->
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -29,33 +20,24 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    
-    <!-- Contenido principal de la página -->
+
     <main>
         <section>
-            <!-- Título de la sección de contacto -->
             <h2>Contáctanos</h2>
-            
-            <!-- Formulario de contacto con validación al enviarse -->
             <form id="formContacto" onsubmit="return validarFormulario()">
-                <!-- Campo para el nombre del usuario -->
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
-                <!-- Campo para el correo electrónico -->
                 <label for="correo">Correo:</label>
                 <input type="email" id="correo" name="correo" required>
 
-                <!-- Botón para enviar el formulario -->
                 <button type="submit">Enviar</button>
             </form>
-            
-            <!-- Botón que cambia el fondo al pasar el mouse por encima -->
+
             <button onmouseover="cambiarFondo()">Cambiar fondo</button>
         </section>
     </main>
-    
-    <!-- Pie de página con información de derechos de autor -->
+
     <footer>
         <p>© 2025 Proyecto Estudiantil - Día del Idioma</p>
     </footer>
